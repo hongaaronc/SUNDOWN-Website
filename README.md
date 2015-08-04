@@ -1,6 +1,4 @@
 # SUNDOWN-Website
-Website for the game SUNDOWN
-
 View the latest version of the website as it is on GitHub here:
 <a href="http://hongaaronc.github.io/SUNDOWN-Website/">http://hongaaronc.github.io/SUNDOWN-Website/</a>
 
