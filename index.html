@@ -29,20 +29,22 @@
             <iframe width="840" height="540" src="https://www.youtube.com/embed/FNgSAq6tBg4" frameborder="0" allowfullscreen></iframe>
             <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where you are completely invisible in the dark. The only way to see yourself is by the light sources scattered around the various maps and by shooting, which emits bursts of light. You can also run and dodge, which produces visible smoke trails behind you.</p>
             <p>However, although you can see yourself through these methods, so can your opponents. Make quick decisions to make sure you find them... before they find you.</p>
-            <p>Choose from a variety of weapons, including a shotgun, auto-rifle, rivet-rifle, dual-wielded revolvers, and a sword.  When the lights go out, it's game time!</p>
             <div id="section_maps">
-                <h1 style="font-family:Molot;">Maps</h1>
+                <h1 style="font-family:Molot;">Zones</h1>
                 <p><span style="font-family:Molot;">SUNDOWN</span> has several zones, each featuring its own unique theme and mechanics.</p>
                 <ul>
-                    <li><a href="#"><img src="img/screenshot1.png" /><br />Mansion</a></li>
-                    <li><a href="#"><img src="img/screenshot1.png" /><br />Factory</a></li>
-                    <li><a href="#"><img src="img/screenshot1.png" /><br />Subway</a></li>
+                    <li><a href="#" style="color:#F15B24;"><img src="img/zones/mansion.png" onclick="image_open(this);" style="border-color:#F15B24;"/><br />Mansion</a></li>
+                    <li><a href="#" style="color:#00FFFF;"><img src="img/zones/factory.png" onclick="image_open(this);" style="border-color:#00FFFF;" /><br />Factory</a></li>
+                    <li><a href="#" style="color:#00FFA0;"><img src="img/zones/subway.png" onclick="image_open(this);" style="border-color:#00FFA0;" /><br />Subway</a></li>
                 </ul>
             </div>
             <img src="img/mildbeast.png" style="max-width:350px;" />
             <p style="font-size:14px; color:#666; margin-bottom:0px;">&copy; COPYRIGHT 2015 MILD BEAST GAMES</p>
             <!-- CONTENT ENDS HERE-->
         </div>
+    </div>
+    <div id="viewer" onclick="image_close();">
+        <a id="viewer_link"><img id="viewer_image" /></a>
     </div>
 </body>
 
