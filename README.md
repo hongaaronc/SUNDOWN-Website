@@ -9,12 +9,13 @@ The website is hosted here:
 <a href="http://www.sundown-game.com">http://www.sundown-game.com</a>
 
 <br/><br/><br/>
-<h1>DO NOT DISCLOSE THE FOLLOWING INFORMATION</h1>
+<h2>DO NOT DISCLOSE THE FOLLOWING INFORMATION</h2>
 <p>
   <h3>Management Login for website:</h3><br/>
   <b><a href="namecheap.com">Domain Registration - namecheap.com</a></b><br/>
   <b>Username:</b> username<br/>
   <b>Password:</b> password<br/>
+  <br/>
   <b><a href="namecheap.com">Web Hosting - namecheap.com</a></b><br/>
   <b>Username:</b> username<br/>
   <b>Password:</b> password<br/>
