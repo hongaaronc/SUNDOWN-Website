@@ -1,9 +1,9 @@
 # SUNDOWN-Website
-View the latest version of the website as it is on GitHub here:
+View the latest version of the website as it is on GitHub here:<br/>
 <a href="http://hongaaronc.github.io/SUNDOWN-Website/">http://hongaaronc.github.io/SUNDOWN-Website/</a>
 
 
-The website is hosted here:
+The website is hosted here:<br/>
 <a href="http://www.sundown-game.com">http://www.sundown-game.com</a>
 
 
