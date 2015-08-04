@@ -9,9 +9,9 @@ The website is hosted here:
 <a href="http://www.sundown-game.com">http://www.sundown-game.com</a>
 
 <br/><br/><br/>
-<em><strong>DO NOT DISCLOSE THE FOLLOWING INFORMATION</strong></em>
+<h1>DO NOT DISCLOSE THE FOLLOWING INFORMATION</h1>
 <p>
-  <b><u>Management Login for website:</u></b><br/>
+  <h3>Management Login for website:</h3><br/>
   <b><a href="namecheap.com">Domain Registration - namecheap.com</a></b><br/>
   <b>Username:</b> username<br/>
   <b>Password:</b> password<br/>
@@ -20,7 +20,7 @@ The website is hosted here:
   <b>Password:</b> password<br/>
 </p>
 <p>
-  <b><u>FTP Login for website:</u></b><br/>
+  <h3>FTP Login for website:</h3><br/>
   <b>Username:</b> username<br/>
   <b>Password:</b> password<br/>
 </p>
