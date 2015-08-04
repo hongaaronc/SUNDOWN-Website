@@ -20,6 +20,9 @@ The website is hosted here:<br/>
 </p>
 <p>
   <h3>FTP Login for website:</h3><br/>
+  <b>Host:</b> ftp.mildbeast.com<br/>
+  <b>FTP & explicit FTPS port:</b> 21<br/>
+  <b>SFTP port:</b> 18765<br/>
   <b>Username:</b> mildbeas<br/>
   <b>Password:</b> ballerpassword<br/>
 </p>
