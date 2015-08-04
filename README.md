@@ -6,7 +6,7 @@ View the latest version of the website as it is on GitHub here:
 The website is hosted here:
 <a href="http://www.sundown-game.com">http://www.sundown-game.com</a>
 
-<br/><br/><br/>
+
 <h2>DO NOT DISCLOSE THE FOLLOWING INFORMATION</h2>
 <p>
   <h3>Management Login for website:</h3><br/>
