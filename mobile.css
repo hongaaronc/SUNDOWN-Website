@@ -10,7 +10,7 @@ body {
     background-color:#000;
     color:#FFF;
     text-align:center;
-    font-size:30px;
+    font-size:24px;
     font-family: 'Open Sans', sans-serif;
     height:100%;
 }
@@ -23,7 +23,7 @@ body {
 
 p {
     margin-bottom:100px;
-    padding:0px 15vw 0px 15vw;
+    padding:0px 5vw 0px 5vw;
 }
 
 #section_maps {
@@ -47,10 +47,11 @@ p {
     text-decoration:none;
     color:#FFF;
     font-family:Molot;
+    font-size:36px;
 }
 
 #section_maps ul li a img {
-    max-width:400px;
+    max-width:600px;
     border: 5px solid;
     margin:5px;
     -webkit-transition: linear 0.1s;
@@ -58,7 +59,6 @@ p {
 }
 
 #section_maps ul li a:hover img {
-    max-width:400px;
     border: 10px solid #FFF;
     margin:0px;
 }
