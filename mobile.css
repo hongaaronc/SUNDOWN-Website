@@ -7,7 +7,6 @@
 }
 
 body {
-    overflow-y: hidden;
     background-color:#000;
     color:#FFF;
     text-align:center;
@@ -27,86 +26,7 @@ p {
     padding:0px 15vw 0px 15vw;
 }
 
-#parallax {
-    position:fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective-origin: 100% initial;
-    margin:auto;
-}
-
-.intro {
-    visibility:visible;
-}
-
-.parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: 100% initial;
-    margin:0px;
-}
-.parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
-    bottom: -225px;
-    background-color:#F15B24;
-    /*max-width:1920px;
-    margin:auto;*/
-}
-.parallax__layer--title {
-    background-image: url("img/title.png");
-    background-size:65vw;
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:center;
-    transform: translateZ(-2px) scale(2) translateY(-100px);
-}
-.parallax__layer--sun {
-    background-image: url("img/sun.png");
-    background-size:32vw;
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:center;
-    transform: translateZ(-8px) scale(5) translateY(-100px);
-}
-.parallax__layer--skylinefront {
-    background-image: url("img/skylinefront.png");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:bottom;
-    transform: translateZ(0);
-    bottom: -23vh;
-    /*max-width:1920px;
-    margin:auto;*/
-}
-.parallax__layer--skylineback {
-    background-image: url("img/skylineback.png");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:bottom;
-    transform: translateZ(-1px) scale(2);
-    bottom: -23vh;
-    /*max-width:1920px;
-    margin:auto;*/
-}
-.parallax__layer--front {
-    background-color:#000;
-    transform: translateZ(0);
-    top:100vh;
-}
-
 #section_maps {
-    height:700px;
     left:0px;
     position:static;
     transform: translateZ(10px) scale(1/2);

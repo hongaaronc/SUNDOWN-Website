@@ -4,6 +4,14 @@
     <title>SUNDOWN</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+    if (screen.width <= 699) {
+        document.location = "mobile.html";
+    }
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+        location.replace("mobile.html");
+    }
+    </script>
     <script src="index.js"></script>
     <link rel="icon" type="image/png" href="img/icon.png">
 </head>
