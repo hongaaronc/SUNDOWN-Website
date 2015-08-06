@@ -62,7 +62,7 @@ p {
     margin:auto;*/
 }
 .parallax__layer--title {
-    background-image: url("img/title.png");
+    background-image: url("img/title.svg");
     background-size:65vw;
     background-repeat:no-repeat;
     background-position-x:center;
@@ -70,7 +70,7 @@ p {
     transform: translateZ(-2px) scale(2) translateY(-100px);
 }
 .parallax__layer--sun {
-    background-image: url("img/sun.png");
+    background-image: url("img/sun.svg");
     background-size:32vw;
     background-repeat:no-repeat;
     background-position-x:center;
@@ -78,7 +78,7 @@ p {
     transform: translateZ(-8px) scale(5) translateY(-100px);
 }
 .parallax__layer--skylinefront {
-    background-image: url("img/skylinefront.png");
+    background-image: url("img/skylinefront.svg");
     background-size:1920px;
     background-repeat:repeat-x;
     background-position-x:center;
@@ -89,7 +89,7 @@ p {
     margin:auto;*/
 }
 .parallax__layer--skylineback {
-    background-image: url("img/skylineback.png");
+    background-image: url("img/skylineback.svg");
     background-size:1920px;
     background-repeat:repeat-x;
     background-position-x:center;
