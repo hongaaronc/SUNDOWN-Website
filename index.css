@@ -79,8 +79,8 @@ p {
 }
 .parallax__layer--skylinefront {
     background-image: url("img/skylinefront.png");
-    background-size:contain;
-    background-repeat:no-repeat;
+    background-size:1920px;
+    background-repeat:repeat-x;
     background-position-x:center;
     background-position-y:bottom;
     transform: translateZ(0);
@@ -90,8 +90,8 @@ p {
 }
 .parallax__layer--skylineback {
     background-image: url("img/skylineback.png");
-    background-size:contain;
-    background-repeat:no-repeat;
+    background-size:1920px;
+    background-repeat:repeat-x;
     background-position-x:center;
     background-position-y:bottom;
     transform: translateZ(-1px) scale(2);
