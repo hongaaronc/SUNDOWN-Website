@@ -1,5 +1,18 @@
 var introvisible = true;
 
+function resize() {
+    var skylineFront = document.getElementsByClassName("parallax__layer--skylinefront")[0];
+    var skylineBack = document.getElementsByClassName("parallax__layer--skylineback")[0];
+    if (window.innerWidth < 1920) {
+        skylineFront.style.backgroundSize = window.innerWidth + "px";
+        skylineBack.style.backgroundSize = window.innerWidth + "px";
+    }
+    else {
+        skylineFront.style.backgroundSize = "1920px";
+        skylineBack.style.backgroundSize = "1920px";
+    }
+}
+
 function checkScrollPosition() {
     if (document.getElementById("parallax").scrollTop >= 1000) {
         if (introvisible) {
