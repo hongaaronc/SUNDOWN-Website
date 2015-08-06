@@ -4,8 +4,14 @@ function resize() {
     var skylineFront = document.getElementsByClassName("parallax__layer--skylinefront")[0];
     var skylineBack = document.getElementsByClassName("parallax__layer--skylineback")[0];
     if (window.innerWidth < 1920) {
-        skylineFront.style.backgroundSize = window.innerWidth + "px";
-        skylineBack.style.backgroundSize = window.innerWidth + "px";
+        if (window.innerWidth / window.innerHeight > 16 / 9) {
+            skylineFront.style.backgroundSize = window.innerHeight * 16 / 9 + "px";
+            skylineBack.style.backgroundSize = window.innerHeight * 16 / 9 + "px";
+        }
+        else {
+            skylineFront.style.backgroundSize = window.innerWidth + "px";
+            skylineBack.style.backgroundSize = window.innerWidth + "px";
+        }
     }
     else {
         skylineFront.style.backgroundSize = "1920px";
@@ -28,7 +34,7 @@ function checkScrollPosition() {
         }
     }
     else {
-        if (!introvisible) {
+        if (!introvisible){
             var backgrounds = document.getElementsByClassName("background");
             for (var i = 0; i < backgrounds.length; i++) {
                 backgrounds[i].style.visibility = "hidden";
