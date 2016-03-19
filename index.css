@@ -105,10 +105,20 @@ p {
     top:100vh;
 }
 
+#weapon_menu ul {
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+#weapon_menu ul li {
+    display:inline-block;
+    margin:0px 20px 60px 20px;
+}
+
 #section_maps {
-    height:700px;
     left:0px;
-    position:static;
+    position: static;
     transform: translateZ(10px) scale(1/2);
 }
 
