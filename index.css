@@ -113,7 +113,27 @@ p {
 
 #weapon_menu ul li {
     display:inline-block;
-    margin:0px 20px 60px 20px;
+    margin: 0px 20px 20px 20px;
+}
+
+.weapon_button {
+    background-color: #f15b24;
+    border: none;
+    border-radius: 100%;
+}
+
+.weapon_button:hover {
+    background-color: #9e0b0f;
+}
+
+.button_selected {
+    background-color: #9e0b0f;
+}
+
+#weapon_description {
+    background-color: #9e0b0f;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #section_maps {
