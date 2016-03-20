@@ -26,6 +26,37 @@ p {
     padding:0px 0px 0px 0px;
 }
 
+#weapon_menu ul {
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+#weapon_menu ul li {
+    display:inline-block;
+    margin: 0px 20px 20px 20px;
+}
+
+.weapon_button {
+    background-color: #f15b24;
+    border: none;
+    border-radius: 100%;
+}
+
+.weapon_button:hover {
+    background-color: #9e0b0f;
+}
+
+.button_selected {
+    background-color: #9e0b0f;
+}
+
+#weapon_description {
+    background-color: #9e0b0f;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 #section_maps {
     left:0px;
     position:static;

@@ -16,8 +16,80 @@
         <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where you are completely invisible in the dark. The only way to see yourself is by the light sources scattered around the various maps and by shooting, which emits bursts of light. You can also run and dodge, which produces visible smoke trails behind you.</p>
         <p>However, although you can see yourself through these methods, so can your opponents. Make quick decisions to make sure you find them... before they find you.</p>
         <div id = "weapons">
-                <h1 style="font-family:Molot;">Weapons</h1>
-                <p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Click on the buttons above to find out more about each weapon.</p>
+            <h1 style="font-family:Molot;">Weapons</h1>
+            <div id = "weapon_menu">
+                    <ul>
+                        <li><div class = "weapon_button" id = "button_shotgun"><img src = "img/weapon_icons/icon_shotgun.png"/></div><br>Shotgun</li>
+                        <li><div class = "weapon_button" id = "button_autorifle"><img src = "img/weapon_icons/icon_autorifle.png"/></div><br>Autorifle</li>
+                        <li><div class = "weapon_button" id = "button_revolver"><img src = "img/weapon_icons/icon_revolver.png"/></div><br>Revolvers</li>
+                        <li><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Rivetrifle</li>
+                        <li><div class = "weapon_button" id = "button_sword"><img src = "img/weapon_icons/icon_sword.png"/></div><br>Sword</li>
+                    </ul>    
+                </div>
+                
+                <div id = "weapon_description">
+                        <div id = "description_shotgun">
+                            <p>The <span style="font-family:Molot;">Shotgun</span> is a mid range weapon with a wide reach.</p>
+                            <div class = "weapon_info">
+                                <p>
+                                    <strong>Ammo Clip:</strong> 2 bullets<br>
+                                    <strong>Reload Time:</strong> 2.4 seconds<br>
+                                    <strong>Alt-Fire:</strong> Double Blast<br>
+                                    Clear out your ammo clip to shoot a wider and far reaching shot.<br>
+                                    <strong>Alt-Fire Cooldown Time:</strong> 2.4 seconds
+                                </p>
+                            </div>
+                        </div>
+                        <div id = "description_autorifle">
+                            <p>The <span style="font-family:Molot;">Autorifle</span> can shoot multiple bullets in rapid succession.</p>
+                                <div class= "weapon_info">
+                                    <p>
+                                        <strong>Ammo Clip:</strong> 18 bullets<br>
+                                        <strong>Reload Time:</strong> 2.5 seconds<br>
+                                        <strong>Alt-Fire:</strong> Smoke Clone<br>
+                                        Send a smoke trail in the direction you're facing to make it look like you're running that way<br>
+                                        <strong>Alt-Fire Cooldown Time:</strong> 10 seconds
+                                    </p>
+                                </div>
+                        </div>
+                        <div id = "description_revolver">
+                            <p>The <span style="font-family:Molot;">Revolvers</span> can shoot bullets that bounce off of walls.</p>
+                            <div class= "weapon_info">
+                                <p>
+                                    <strong>Ammo Clip:</strong> 12 bullets<br>
+                                    <strong>Reload Time:</strong> 3 seconds<br>
+                                    <strong>Alt Fire:</strong> Flare<br>
+                                    Shoot a flare that makes the area around it visible to everyone.<br>
+                                    <strong>Alt-Fire Cooldown Time:</strong> 5 seconds
+                                </p>
+                            </div>
+                        </div>
+                        <div id = "description_rivetrifle">
+                            <p>The <span style="font-family:Molot;">Rivetrifle</span> can charge up to penetrate through walls and snipe people from long distances.</p>
+                            <div class= "weapon_info">
+                                <p>
+                                    <strong>Ammo Clip:</strong> 1 bullet<br>
+                                    <strong>Reload Time:</strong> 3.1 seconds<br>
+                                    <strong>Alt Fire:</strong> Remote Mine<br>
+                                    Place a mine that you can remotely detonate at any time.<br>
+                                    <strong>Alt-Fire Cooldown Time: </strong> 10 seconds
+                                </p>
+                            </div>
+                        </div>
+                        <div id = "description_sword">
+                            <p>The <span style="font-family:Molot;">Sword</span> can kill people quickly upclose. Charge up to do a quick dash attack.</p>
+                            <div class= "weapon_info">
+                                <p>
+                                    <strong>Ammo Clip:</strong> None<br>
+                                    <strong>Reload Time:</strong> None<br>
+                                    <strong>Alt Fire:</strong> Blink<br>
+                                    Teleport across the map to a wall or person to get close for the kill.
+                                    <strong>Alt-Fire Cooldown Time: </strong> 4 seconds
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Tap the buttons above to find out more about each weapon.</p>
             </div>
         <div id="section_maps">
             <h1 style="font-family:Molot;">Zones</h1>
@@ -40,6 +112,8 @@
     <div id="viewer" onclick="image_close();">
         <a id="viewer_link"><img id="viewer_image" /></a>
     </div>
+    <script src = "jquery-1.12.2.min.js"></script>
+    <script src = "app.js"></script>
 </body>
 
 </html>
