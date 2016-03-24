@@ -41,6 +41,17 @@ p {
     margin: 50px 0px 50px 0px;
 }
 
+.altfire_info {
+    margin: 40px 40px 40px 40px;
+    padding-top: 10px;
+    padding-bottom: 0.05px;
+    background-color: #a95757;
+}
+
+.altfire_info p {
+    color: black;
+}
+
 .weapon_button {
     background-color: #f15b24;
     border: none;
