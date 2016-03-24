@@ -116,8 +116,40 @@ p {
     margin: 0px 20px 20px 20px;
 }
 
-.weapon_info p {
+.weapon_gif {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    float: left;
+}
+
+.altfire_gif {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+    float: right;
+}
+
+.altfire_info {
+    margin: 40px 40px 40px 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.altfire_info p {
+    color: black;
+}
+
+.altfire_icon {
+    float: left;
+}
+
+.weapon_info {
     margin: 50px 0px 50px 0px;
+    padding: 20px 40px 20px 40px;
 }
 
 .weapon_button {
@@ -138,6 +170,8 @@ p {
     background-color: #9e0b0f;
     padding-top: 5px;
     padding-bottom: 5px;
+    overflow: auto;
+    width: 100%;
 }
 
 #section_maps {

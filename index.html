@@ -35,15 +35,18 @@
         <div class="parallax__layer parallax__layer--front" id="content">
             <!-- CONTENT GOES HERE-->
             <iframe width="840" height="540" src="https://www.youtube.com/embed/FNgSAq6tBg4" frameborder="0" allowfullscreen></iframe>
-            
+
             <div id = "intro">
                 <!-- TODO: Add portraits of characters -->
                 <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where you are completely invisible in the dark. The only way to see yourself is by the light sources scattered around the various maps and by shooting, which emits bursts of light. You can also run and dodge, which produces visible smoke trails behind you.</p>
                 <p>However, although you can see yourself through these methods, so can your opponents. Make quick decisions to make sure you find them... before they find you.</p>
             </div>
-            
+
+            <!-- Weapons section -->
             <div id = "weapons">
                 <h1 style="font-family:Molot;">Weapons</h1>
+
+                <!-- Weapon Button Menu -->
                 <div id = "weapon_menu">
                     <ul>
                         <li><div class = "weapon_button" id = "button_shotgun"><img src = "img/weapon_icons/icon_shotgun.png"/></div><br>Shotgun</li>
@@ -51,126 +54,164 @@
                         <li><div class = "weapon_button" id = "button_revolver"><img src = "img/weapon_icons/icon_revolver.png"/></div><br>Revolvers</li>
                         <li><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Rivetrifle</li>
                         <li><div class = "weapon_button" id = "button_sword"><img src = "img/weapon_icons/icon_sword.png"/></div><br>Sword</li>
-                    </ul>    
+                    </ul>
                 </div>
-                
+
+                <!-- Weapon Descriptions -->
                 <div id = "weapon_description">
+
+                        <!-- Shotgun Description -->
                         <div id = "description_shotgun">
+                            <div class="weapon_gif">
+                            </div>
+                            <div class = "altfire_gif">
+                            </div>
                             <div class = "weapon_info">
                                 <p>The <span style="font-family:Molot;">Shotgun</span> is a mid range weapon with a wide reach.</p>
                                 <p>
                                     <strong>Ammo Clip:</strong> 2 bullets<br>
                                     <strong>Reload Time:</strong> 2.4 seconds
                                 </p>
-                                <p>
-                                    <span style="font-family:Molot;">Alt-Fire</span>
-                                </p>
-                                <p>
-                                    <img src = "img/weapon_icons/altfire_shotgun.png"/><br>
-                                    <strong>Double Blast</strong>
-                                </p>
-                                <p>
-                                    Clear out your ammo clip to shoot a wider and far reaching shot.<br>
-                                </p>
-                                <p>
-                                    <strong>Alt-Fire Cooldown Time:</strong> 2.4 seconds
-                                </p>
                             </div>
+                            
+                            
+                            <div class = "altfire_info">
+                                <div class = "altfire_icon">
+                                    <p>
+                                        <span style="font-family:Molot;">Alt-Fire</span><br>
+                                        <img src = "img/weapon_icons/altfire_shotgun.png"/><br>
+                                        <strong>Double Blast</strong>
+                                    </p>
+                                </div>
+                                
+                                <div class = "altfire_text">
+                                <p>Clear out your ammo clip to shoot a wider and far reaching shot.</p>
+                                <p><strong>Alt-Fire Cooldown Time:</strong> 2.4 seconds</p>
+                                </div>   
+                            </div>
+                            
                         </div>
+
+                        <!-- Autorifle Description -->
                         <div id = "description_autorifle">
+                                <div class="weapon_gif">
+                                </div>
+                                <div class = "altfire_gif">
+                                </div>
                                 <div class= "weapon_info">
                                     <p>The <span style="font-family:Molot;">Autorifle</span> can shoot multiple bullets in rapid succession.</p>
                                     <p>
                                         <strong>Ammo Clip:</strong> 18 bullets<br>
                                         <strong>Reload Time:</strong> 2.5 seconds
                                     </p>
-                                    <p>
-                                        <span style="font-family:Molot;">Alt-Fire</span>
-                                    </p>
-                                    <p>
-                                        <img src = "img/weapon_icons/altfire_autorifle.png"/><br>
-                                        <strong>Smoke Clone</strong>
-                                    </p>
-                                    <p>
-                                        Send a smoke trail in the direction you're facing to make it look like you're running that way.
-                                    </p>
-                                    <p>
-                                        <strong>Alt-Fire Cooldown Time:</strong> 10 seconds
-                                    </p>
+                                </div>
+                                <div class = "altfire_info">
+                                    <div class = "altfire_icon">
+                                        <p>
+                                            <span style="font-family:Molot;">Alt-Fire</span><br>
+                                            <img src = "img/weapon_icons/altfire_autorifle.png"/><br>
+                                            <strong>Smoke Clone</strong>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class = "altfire_text">
+                                        <p>Send a smoke trail in the direction you're facing to make it look like you're running that way.</p>
+                                        <p><strong>Alt-Fire Cooldown Time:</strong> 10 seconds</p>
+                                    </div>
+                                    
                                 </div>
                         </div>
+
+                        <!-- Revolver Description -->
                         <div id = "description_revolver">
+                            <div class="weapon_gif">
+                            </div>
+                            <div class = "altfire_gif">
+                            </div>
                             <div class= "weapon_info">
                                 <p>The <span style="font-family:Molot;">Revolvers</span> can shoot bullets that bounce off of walls.</p>
                                 <p>
                                     <strong>Ammo Clip:</strong> 12 bullets<br>
                                     <strong>Reload Time:</strong> 3 seconds<br>
                                 </p>
-                                <p>
-                                    <span style="font-family:Molot;">Alt-Fire</span>
-                                </p>
-                                <p>
-                                    <img src = "img/weapon_icons/altfire_revolver.png"/><br>
-                                    <strong>Flare</strong>
-                                </p>
-                                <p>
-                                    Shoot a flare that makes the area around it visible to everyone.
-                                </p>
-                                <p>
-                                    <strong>Alt-Fire Cooldown Time:</strong> 5 seconds
-                                </p>
+                            </div>
+                            <div class = "altfire_info">
+                                <div class = "altfire_icon">
+                                    <p>
+                                        <span style="font-family:Molot;">Alt-Fire</span><br>
+                                        <img src = "img/weapon_icons/altfire_revolver.png"/><br>
+                                        <strong>Flare</strong>
+                                    </p>
+                                </div>
+                                
+                                <div class="altfire_text">
+                                    <p>Shoot a flare that makes the area around it visible to everyone.</p>
+                                    <p><strong>Alt-Fire Cooldown Time:</strong> 5 seconds</p>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Rivetrifle Description -->
                         <div id = "description_rivetrifle">
+                            <div class="weapon_gif">
+                            </div>
+                            <div class = "altfire_gif">
+                            </div>
                             <div class= "weapon_info">
                                 <p>The <span style="font-family:Molot;">Rivetrifle</span> can charge up its shot to penetrate through walls and snipe people from long distances.</p>
                                 <p>
                                     <strong>Ammo Clip:</strong> 1 bullet<br>
                                     <strong>Reload Time:</strong> 3.1 seconds<br>
                                 </p>
-                                <p>
-                                    <span style="font-family:Molot;">Alt-Fire</span>
-                                </p>
-                                <p>
-                                    <img src = "img/weapon_icons/altfire_rivetrifle.png"/><br>
-                                    <strong>Remote Mine</strong>
-                                </p>
-                                <p>
-                                    Place a mine that you can remotely detonate at any time.
-                                </p>
-                                <p>
-                                    <strong>Alt-Fire Cooldown Time: </strong> 10 seconds
-                                </p>
+                            </div>
+                            <div class="altfire_info">
+                                <div class = "altfire_icon">
+                                    <p>
+                                        <span style="font-family:Molot;">Alt-Fire</span><br>
+                                        <img src = "img/weapon_icons/altfire_rivetrifle.png"/><br>
+                                        <strong>Remote Mine</strong>
+                                    </p>
+                                </div>
+                                <div class = "altfire_text">
+                                    <p>Place a mine that you can remotely detonate at any time.</p>
+                                    <p><strong>Alt-Fire Cooldown Time: </strong> 10 seconds</p>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Sword Description -->
                         <div id = "description_sword">
+                            <div class="weapon_gif">
+                            </div>
+                            <div class = "altfire_gif">
+                            </div>
                             <div class= "weapon_info">
-                                <p>The <span style="font-family:Molot;">Sword</span> can kill people quickly upclose. Charge up to do a quick dash attack.</p>
+                                <p>The <span style="font-family:Molot;">Sword</span> can kill people quickly up close. Charge up to do a quick dash attack.</p>
                                 <p>
                                     <strong>Ammo Clip:</strong> None<br>
                                     <strong>Reload Time:</strong> None<br>
                                 </p>
-                                <p>
-                                    <span style="font-family:Molot;">Alt-Fire</span>
-                                </p>
-                                <p>
-                                    <img src = "img/weapon_icons/altfire_sword.png"/><br>
-                                    <strong>Blink</strong>
-                                </p>
-                                <p>
-                                    Teleport across the map to a wall or person to get close for the kill.
-                                </p>
-                                <p>
-                                    <strong>Alt-Fire Cooldown Time: </strong> 4 seconds
-                                </p>
+                            </div>
+                            <div class = "altfire_info">
+                                <div class = "altfire_icon">
+                                    <p>
+                                        <span style="font-family:Molot;">Alt-Fire</span><br>
+                                        <img src = "img/weapon_icons/altfire_sword.png"/><br>
+                                        <strong>Blink</strong>
+                                    </p>
+                                </div>
+                                <div class = "altfire_text">
+                                    <p>Teleport across the map to a wall or person to get close for the kill.</p>
+                                    <p><strong>Alt-Fire Cooldown Time: </strong> 4 seconds</p>
+                                </div>
                             </div>
                         </div>
                 </div>
-                
+
                 <p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Click the buttons above to find out more about each weapon.</p>
             </div>
-            
-            
+
+            <!-- Zones section -->
             <div id="section_maps">
                 <h1 style="font-family:Molot;">Zones</h1>
                 <ul>
@@ -180,7 +221,7 @@
                 </ul>
                 <p><span style="font-family:Molot;">SUNDOWN</span> has several zones, each with multiple levels featuring unique themes and mechanics. Click on the buttons above to find out more about each zone.</p>
             </div>
-            
+
             <p style="font-size:14px; color:#666; margin-bottom:0px;">
                 Email: <a href="mailto:mildbeastgames@gmail.com" style="color:#CCC;">mildbeastgames@gmail.com</a><br>
                 Twitter: <a href="https://twitter.com/MildBeastGames" style="color:#CCC;">@MildBeastGames</a><br>
@@ -196,7 +237,7 @@
     </div>
     <script src = "jquery-1.12.2.min.js"></script>
     <script src = "app.js"></script>
-    
+
 </body>
 
 </html>
