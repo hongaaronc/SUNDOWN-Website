@@ -117,7 +117,6 @@ p {
 }
 
 .weapon_gif {
-    background-color: white;
     width: 400px;
     height: 400px;
     margin-left: 50px;
@@ -125,7 +124,6 @@ p {
 }
 
 .altfire_gif {
-    background-color: white;
     width: 400px;
     height: 400px;
     margin-right: 50px;
