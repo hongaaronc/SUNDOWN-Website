@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
-    if (screen.width <= 699) {
-        document.location = "mobile.html";
-    }
-    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-        location.replace("mobile.html");
-    }
+        if (screen.width <= 699) {
+            document.location = "mobile.html";
+        }
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+            location.replace("mobile.html");
+        }
     </script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 
@@ -38,11 +38,11 @@
 
             <div id = "intro">
                 <!-- TODO: Add portraits of characters -->
-                <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where players are completely invisible in the dark. And all the maps are covered in darkness, aside from some scattered points of light.</p> 
+                <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where all the maps are covered in darkness, aside from some scattered points of light, and every player shares the same view of the screen.</p> 
                     
                 <p>So how do you find youself? Whenever you shoot, your weapon lights you up. Your controller also rumbles whenever you bump into a wall.</p>
                 
-                <p>But revealing yourself also reveals you to your enemies. Make quick decisions to make sure you find them... before they find you.</p>
+                <p>Fight against your friends in a free-for-all to kill one another. Just be careful when revealing yourself: you never know who's been watching your every move!</p>
             </div>
 
             <!-- Weapons section -->
@@ -52,11 +52,11 @@
                 <!-- Weapon Button Menu -->
                 <div id = "weapon_menu">
                     <ul>
-                        <li><div class = "weapon_button" id = "button_shotgun"><img src = "img/weapon_icons/icon_shotgun.png"/></div><br>Shotgun</li>
-                        <li><div class = "weapon_button" id = "button_autorifle"><img src = "img/weapon_icons/icon_autorifle.png"/></div><br>Autorifle</li>
-                        <li><div class = "weapon_button" id = "button_revolver"><img src = "img/weapon_icons/icon_revolver.png"/></div><br>Revolvers</li>
-                        <li><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Sniper Rifle</li>
-                        <li><div class = "weapon_button" id = "button_sword"><img src = "img/weapon_icons/icon_sword.png"/></div><br>Sword</li>
+                        <li style = "font-family:Molot;"><div class = "weapon_button" id = "button_shotgun"><img src = "img/weapon_icons/icon_shotgun.png"/></div><br>Shotgun</li>
+                        <li style = "font-family:Molot;"><div class = "weapon_button" id = "button_autorifle"><img src = "img/weapon_icons/icon_autorifle.png"/></div><br>Autorifle</li>
+                        <li style = "font-family:Molot;"><div class = "weapon_button" id = "button_revolver"><img src = "img/weapon_icons/icon_revolver.png"/></div><br>Revolvers</li>
+                        <li style = "font-family:Molot;"><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Sniper Rifle</li>
+                        <li style = "font-family:Molot;"><div class = "weapon_button" id = "button_sword"><img src = "img/weapon_icons/icon_sword.png"/></div><br>Sword</li>
                     </ul>
                 </div>
 
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 
-                <a id = "weapon_back_link" href = "#weapons"><div id = "weapon_select_button">Weapon Select</div></a>
+                <!--<a id = "weapon_back_link" href = "#"><div id = "weapon_select_button"></div></a>-->
                 <div id = "weapon_instructions"><p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Click the buttons above to find out more about each weapon.</p></div>
                 
                 
@@ -155,8 +155,9 @@
     <div id="viewer" onclick="image_close();">
         <a id="viewer_link"><img id="viewer_image" /></a>
     </div>
-    <script src = "jquery-1.12.2.min.js"></script>
-    <script src = "app.js"></script>
+    <script src = "js/jquery-1.12.3.min.js"></script>
+    <script src = "js/jquery-scrollto.js"></script>
+    <script src = "js/app.js"></script>
 
 </body>
 

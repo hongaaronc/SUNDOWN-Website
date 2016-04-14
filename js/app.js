@@ -13,6 +13,8 @@ var main = function () {
     clearWeaponDescription();
     $('#weapon_select_button').hide();
     var descriptionDisplayed = false;
+    var fade = { opacity: 0, transition: 'opacity 0.5s' };
+    var appear = { opacity: 100, transition: 'opacity 0.5s' };
     $('#weapon_description').hide();
     $('.weapon_button').click(function () {
         var previouslySelectedButton = $(".button_selected");
@@ -21,14 +23,14 @@ var main = function () {
         }
         // if button is already selected hide description
         if ($(this).hasClass('button_selected')){
-            $('#weapon_description').slideUp('slow');  
+            $('#weapon_description').css(fade).slideUp('slow'); 
             $(this).removeClass('button_selected');
             $('#weapon_instructions').fadeIn('slow', function(){
                 $('#weapon_instructions').show();
             });
-            $('#weapon_select_button').fadeOut('fast', function(){
-                $('#weapon_select_button').hide();
-            });
+//            $('#weapon_select_button').fadeOut('fast', function(){
+//                $('#weapon_select_button').hide();
+//            });
             descriptionDisplayed = false;
         } else {
             clearWeaponDescription();
@@ -54,16 +56,22 @@ var main = function () {
                 default:
             }
             if (!descriptionDisplayed){
-                $('#weapon_description').hide().slideDown('slow');
+                $('#weapon_description').css('opacity',0).slideDown('slow').animate({opacity: 1}, {queue: false, duration: 'slow'});
                 $('#weapon_instructions').fadeOut('slow', function(){
                     $('#weapon_instructions').hide();
                 });
-                $('#weapon_select_button').fadeIn('slow', function(){
-                    $('#weapon_select_button').show();
-                });
+//                $('#weapon_select_button').fadeIn('slow', function(){
+//                    $('#weapon_select_button').show();
+//                });
                 descriptionDisplayed = true;
             }
+            $('#weapon_description').ScrollTo();
         }
+    });
+    
+    $('#weapon_back_link').on('click', function(event) {
+        event.preventDefault();
+        $("#weapons").ScrollTo();
     });
 };
 
