@@ -28,9 +28,9 @@ var main = function () {
             $('#weapon_instructions').fadeIn('slow', function(){
                 $('#weapon_instructions').show();
             });
-//            $('#weapon_select_button').fadeOut('fast', function(){
-//                $('#weapon_select_button').hide();
-//            });
+            $('#weapon_select_button').fadeOut('fast', function(){
+                $('#weapon_select_button').hide();
+            });
             descriptionDisplayed = false;
         } else {
             clearWeaponDescription();
@@ -60,16 +60,16 @@ var main = function () {
                 $('#weapon_instructions').fadeOut('slow', function(){
                     $('#weapon_instructions').hide();
                 });
-//                $('#weapon_select_button').fadeIn('slow', function(){
-//                    $('#weapon_select_button').show();
-//                });
+                $('#weapon_select_button').fadeIn('slow', function(){
+                    $('#weapon_select_button').show();
+                });
                 descriptionDisplayed = true;
             }
             $('#weapon_description').ScrollTo();
         }
     });
     
-    $('#weapon_back_link').on('click', function(event) {
+    $('#weapon_select_button').on('click', function(event) {
         event.preventDefault();
         $("#weapons").ScrollTo();
     });
