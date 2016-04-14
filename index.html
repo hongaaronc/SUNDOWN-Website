@@ -38,8 +38,11 @@
 
             <div id = "intro">
                 <!-- TODO: Add portraits of characters -->
-                <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where you are completely invisible in the dark. The only way to see yourself is by the light sources scattered around the various maps and by shooting, which emits bursts of light. You can also run and dodge, which produces visible smoke trails behind you.</p>
-                <p>However, although you can see yourself through these methods, so can your opponents. Make quick decisions to make sure you find them... before they find you.</p>
+                <p><span style="font-family:Molot;">SUNDOWN</span> is a top-down multiplayer stealth game where players are completely invisible in the dark. And all the maps are covered in darkness, aside from some scattered points of light.</p> 
+                    
+                <p>So how do you find youself? Whenever you shoot, your weapon lights you up. Your controller also rumbles whenever you bump into a wall.</p>
+                
+                <p>But revealing yourself also reveals you to your enemies. Make quick decisions to make sure you find them... before they find you.</p>
             </div>
 
             <!-- Weapons section -->
@@ -52,7 +55,7 @@
                         <li><div class = "weapon_button" id = "button_shotgun"><img src = "img/weapon_icons/icon_shotgun.png"/></div><br>Shotgun</li>
                         <li><div class = "weapon_button" id = "button_autorifle"><img src = "img/weapon_icons/icon_autorifle.png"/></div><br>Autorifle</li>
                         <li><div class = "weapon_button" id = "button_revolver"><img src = "img/weapon_icons/icon_revolver.png"/></div><br>Revolvers</li>
-                        <li><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Rivetrifle</li>
+                        <li><div class = "weapon_button" id = "button_rivetrifle"><img src = "img/weapon_icons/icon_rivetrifle.png"/></div><br>Sniper Rifle</li>
                         <li><div class = "weapon_button" id = "button_sword"><img src = "img/weapon_icons/icon_sword.png"/></div><br>Sword</li>
                     </ul>
                 </div>
@@ -63,55 +66,69 @@
                     <div id = "description_shotgun">
                         <div class= "weapon_info">
                             <h1 style = "font-family:Molot;">Shotgun</h1> 
-                            <p>The basic, mid-range weapon with a wide reach.</p>
+                            The basic, mid-range weapon with a wide reach.
                         </div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/shotgun.gif"/><br><strong>Ammo Clip: </strong>2 bullets<br><strong>Reload Time: </strong>2.4 seconds</div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/shotgun_alt.gif"/><br><strong>Alt-Fire: </strong>Double Blast<br><strong>Cooldown Time: </strong>2.4 seconds</div>
+                        <div class = "weapon_stats_container">
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/shotgun.gif"/><br><strong>Ammo Clip: </strong>2 bullets<br><strong>Reload Time: </strong>2.4 seconds</div>
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/shotgun_alt.gif"/><br><strong>Alt-Fire: </strong>Double Blast<br><strong>Cooldown Time: </strong>2.4 seconds</div>
+                        </div>
                     </div>
 
                     <!-- Autorifle Description -->
                     <div id = "description_autorifle">
                         <div class= "weapon_info">
                             <h1 style = "font-family:Molot;">Autorifle</h1> 
-                            <p>Shoots multiple, rapid-fire bullets.</p>
+                            Shoots multiple, rapid-fire bullets.
                         </div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/autorifle.gif"/><br><strong>Ammo Clip: </strong>18 bullets<br><strong>Reload Time: </strong>2.5 seconds</div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/autorifle_alt.gif"/><br><strong>Alt-Fire: </strong>Smoke Clone<br><strong>Cooldown Time: </strong>10 seconds</div>
+                        <div class = "weapon_stats_container">
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/autorifle.gif"/><br><strong>Ammo Clip: </strong>18 bullets<br><strong>Reload Time: </strong>2.5 seconds</div>
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/autorifle_alt.gif"/><br><strong>Alt-Fire: </strong>Smoke Clone<br><strong>Cooldown Time:  </strong>10 seconds</div>
+                        </div>
                     </div>
 
                     <!-- Revolver Description -->
                     <div id = "description_revolver">
                         <div class= "weapon_info">
                             <h1 style = "font-family:Molot;">Revolvers</h1> 
-                            <p>Shoot bullets that bounce off of walls.</p>
+                            Shoot bullets that bounce off of walls.
                         </div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/revolver.gif"/><br><strong>Ammo Clip: </strong>12 bullets<br><strong>Reload Time: </strong>3 seconds</div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/revolver_alt.gif"/><br><strong>Alt-Fire: </strong>Flare<br><strong>Cooldown Time: </strong>5 seconds</div>
+                        
+                        <div class = "weapon_stats_container">
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/revolver.gif"/><br><strong>Ammo Clip: </strong>12 bullets<br><strong>Reload Time: </strong>3 seconds</div>
+                            <div class = "weapon_stats"><img class = "weapon_gif" src = "img/gifs/revolver_alt.gif"/><br><strong>Alt-Fire: </strong>Flare<br><strong>Cooldown Time: </strong>5 seconds</div>
+                        </div>
                     </div>
 
                     <!-- Rivetrifle Description -->
                     <div id = "description_rivetrifle">
                         <div class= "weapon_info">
-                            <h1 style="font-family:Molot;">Rivetrifle</h1> 
-                            <p>Charge your shot to penetrate walls and snipe people from afar.</p>
+                            <h1 style="font-family:Molot;">Sniper Rifle</h1> 
+                            Charge your shot to penetrate walls and snipe people from afar.
                         </div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/rivetrifle.gif"/><br><strong>Ammo Clip: </strong>1 bullet<br><strong>Reload Time: </strong>3.1 seconds</div>
-                        <div class = "weapon_stats"><img class = "altfire_gif" src="img/gifs/rivetrifle_alt.gif"/><br><strong>Alt-Fire: </strong>Remote Mine<br>
-                                <strong>Cooldown Time: </strong> 4 seconds</div>
+                        <div class = "weapon_stats_container">
+                            <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/rivetrifle.gif"/><br><strong>Ammo Clip: </strong>1 bullet<br><strong>Reload Time: </strong>3.1 seconds</div>
+                            <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/rivetrifle_alt.gif"/><br><strong>Alt-Fire: </strong>Remote Mine<br>
+                            <strong>Cooldown Time: </strong> 4 seconds</div>
+                        </div>
                     </div>
                     <!-- Sword Description -->
                     <div id = "description_sword">
                         <div class= "weapon_info">
                             <h1 style="font-family:Molot;">Sword</h1> 
-                            <p>Kill people quickly up close. Charge up to do a quick dash attack.</p>
+                            Kill people quickly up close. Charge up to do a quick dash attack.
                         </div>
-                        <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/sword.gif"/><br><strong>Ammo Clip: </strong>None<br><strong>Reload Time: </strong>None</div>
-                        <div class = "weapon_stats"><img class = "altfire_gif" src="img/gifs/sword_alt.gif"/><br><strong>Alt-Fire: </strong>Blink<br>
-                                <strong>Cooldown Time: </strong> 4 seconds</div>
+                        <div class = "weapon_stats_container">
+                            <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/sword.gif"/><br><strong>Ammo Clip: </strong>None<br><strong>Reload Time: </strong>None</div>
+                            <div class = "weapon_stats"><img class = "weapon_gif" src="img/gifs/sword_alt.gif"/><br><strong>Alt-Fire: </strong>Blink<br>
+                            <strong>Cooldown Time: </strong> 4 seconds</div>
+                        </div>
                     </div>
                 </div>
-
-                <p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Click the buttons above to find out more about each weapon.</p>
+                
+                <a id = "weapon_back_link" href = "#weapons"><div id = "weapon_select_button">Weapon Select</div></a>
+                <div id = "weapon_instructions"><p><span style="font-family:Molot;">SUNDOWN</span> has a variety of weapons, each with their own unique gameplay style and alt-fire. Click the buttons above to find out more about each weapon.</p></div>
+                
+                
             </div>
 
             <!-- Zones section -->

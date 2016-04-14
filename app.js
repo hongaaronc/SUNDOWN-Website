@@ -11,6 +11,7 @@ var main = function () {
     
     //Buttons for weapons
     clearWeaponDescription();
+    $('#weapon_select_button').hide();
     var descriptionDisplayed = false;
     $('#weapon_description').hide();
     $('.weapon_button').click(function () {
@@ -20,8 +21,14 @@ var main = function () {
         }
         // if button is already selected hide description
         if ($(this).hasClass('button_selected')){
-            $('#weapon_description').slideUp(500);  
+            $('#weapon_description').slideUp('slow');  
             $(this).removeClass('button_selected');
+            $('#weapon_instructions').fadeIn('slow', function(){
+                $('#weapon_instructions').show();
+            });
+            $('#weapon_select_button').fadeOut('fast', function(){
+                $('#weapon_select_button').hide();
+            });
             descriptionDisplayed = false;
         } else {
             clearWeaponDescription();
@@ -47,7 +54,13 @@ var main = function () {
                 default:
             }
             if (!descriptionDisplayed){
-                $('#weapon_description').hide().slideDown(500);
+                $('#weapon_description').hide().slideDown('slow');
+                $('#weapon_instructions').fadeOut('slow', function(){
+                    $('#weapon_instructions').hide();
+                });
+                $('#weapon_select_button').fadeIn('slow', function(){
+                    $('#weapon_select_button').show();
+                });
                 descriptionDisplayed = true;
             }
         }
