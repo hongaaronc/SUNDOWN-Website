@@ -163,9 +163,12 @@
 			if ( targetOffsetTopAdjusted !== containerScrollTop ) {
 				scrollOptions.scrollTop = targetOffsetTopAdjusted;
 			}
-			if ( targetOffsetLeftAdjusted !== containerScrollLeft ) {
-				scrollOptions.scrollLeft = targetOffsetLeftAdjusted;
-			}
+            
+            // Commented out to prevent horizontal scroll
+            
+//			if ( targetOffsetLeftAdjusted !== containerScrollLeft ) {
+//				scrollOptions.scrollLeft = targetOffsetLeftAdjusted;
+//			}
 
 			// Check to see if the scroll is necessary
 			if ( $container.prop('scrollHeight') === $container.width() ) {

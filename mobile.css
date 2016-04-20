@@ -171,3 +171,32 @@ p {
 #viewer a:hover img {
     border:#FFF solid 12px;
 }
+
+#mc_embed_signup {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+#mc_label {
+    color: black;
+}
+
+input {
+    font-size: 120%;
+    font-family: 'Open Sans', sans-serif;
+    border: 5px solid black;
+}
+
+input#mce-EMAIL {
+    padding-left: 10px;
+}
+
+input#mc-embedded-subscribe {
+    color: white;
+    background-color: black;
+}
+
+input#mc-embedded-subscribe:hover {
+    color: black;
+    background-color: white;
+}

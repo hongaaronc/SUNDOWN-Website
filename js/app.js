@@ -65,13 +65,13 @@ var main = function () {
                 });
                 descriptionDisplayed = true;
             }
-            $('#weapon_description').ScrollTo();
+            $('#weapon_description').ScrollTo({horizontalScroll: false});
         }
     });
     
     $('#weapon_select_button').on('click', function(event) {
         event.preventDefault();
-        $("#weapons").ScrollTo();
+        $('#weapons').ScrollTo({horizontalScroll: false});
     });
 };
 
